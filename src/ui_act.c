@@ -237,6 +237,10 @@ BarUiActCallback(BarUiActSongInfo) {
 			selStation->isQuickMix ?
 			PianoFindStationById (app->ph.stations, selSong->stationId) :
 			NULL);
+
+	PianoReturn_t pRet = PIANO_RET_OK;
+	WaitressReturn_t wRet = WAITRESS_RET_OK;
+	BarUiActDefaultEventcmd ("songinfo");
 }
 
 /*	print some debugging information
